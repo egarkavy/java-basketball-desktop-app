@@ -30,35 +30,12 @@ public class MainUser {
     public MainUser() throws SQLException {
         newsRepository = new NewsRepository();
 
-//        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
-
         WindowService.SubscribeOnAppTimer((m, s) -> {
             timer.setText(m + " : " + s);
         });
 
         FillNews();
-//
-//        button1.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                try {
-//                    //FillNews();
-//
-//                    newsPanel.add(new Label("hello"), new GridConstraints());
-//                    newsPanel.revalidate();
-//                    newsPanel.repaint();
-//
-//                    JLabel l = new JLabel("asdasd", SwingConstants.CENTER);
-//                    if (panel != null)
-//                        panel.add(l, new GridConstraints());
-//
-//                    panel.revalidate();
-//                    panel.repaint();
-//                } catch (Exception e1) {
-//                    e1.printStackTrace();
-//                }
-//            }
-//        });
+
         playersBtn.addActionListener(e -> {
             try {
                 WindowService.JustGoToVindow(new Players().panel);
@@ -70,6 +47,14 @@ public class MainUser {
         teamsBtn.addActionListener(e -> {
             try {
                 WindowService.JustGoToVindow(new Teams().panel);
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+        });
+
+        gamesBtn.addActionListener(e -> {
+            try {
+                WindowService.JustGoToVindow(new Games().panel);
             } catch (SQLException e1) {
                 e1.printStackTrace();
             }

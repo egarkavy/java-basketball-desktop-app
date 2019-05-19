@@ -36,7 +36,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="1"/>
+          <text value="admin"/>
         </properties>
       </component>
       <component id="22f47" class="javax.swing.JTextField" binding="passwordInput">
@@ -46,7 +46,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="1"/>
+          <text value="admin"/>
         </properties>
       </component>
       <component id="456ef" class="javax.swing.JButton" binding="register">

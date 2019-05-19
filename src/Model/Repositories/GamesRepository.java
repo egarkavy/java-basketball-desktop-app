@@ -7,6 +7,7 @@ import Model.Tables.Team;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -22,7 +23,7 @@ public class GamesRepository {
     }
 
     public List<Game> Get() throws SQLException {
-        String sql = String.format("SELECT g.*, t1.Id, t1.TeamName, t2.Id, t2.TeamName FROM basketball.games g\n" +
+        String sql = String.format("SELECT g.*, t1.TeamName, t2.TeamName FROM basketball.games g\n" +
                                         "join basketball.teams t1 on t1.id = g.FirstTeamId\n" +
                                         "join basketball.teams t2 on t2.id = g.SecondTeamId");
 
@@ -42,6 +43,7 @@ public class GamesRepository {
             String sName = results.getString(9);
 
             Game game = new Game();
+            game.setId(id);
             game.setFirstTeamId(fId);
             game.setFirstTeamName(fName);
             game.setFirstTeamScore(fScope);
@@ -76,7 +78,8 @@ public class GamesRepository {
                 "%s,\n" +
                 "%s,\n" +
                 "%s,\n" +
-                "%s);\n", game.getFirstTeamId(), game.getSecondTeamId(), game.getWinnerId(), game.getFirstTeamScore(), game.getSecondTeamScore(), game.getDateOfGame());
+                "'%s');\n", game.getFirstTeamId(), game.getSecondTeamId(), game.getWinnerId(), game.getFirstTeamScore(), game.getSecondTeamScore(), new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(game.getDateOfGame()));
+        //2011-12-18 13:17:17
 
         int result = driver.statement.executeUpdate(sql);
     }

@@ -20,7 +20,8 @@ public class TeamRepository {
     }
 
     public List<Team> Get() throws SQLException {
-        String sql = String.format("SELECT * from teams");
+        String sql = String.format("select t.*, c.Name as CountryName from basketball.teams t\n" +
+                "join basketball.countries c on c.id = t.countryid ");
 
         ResultSet results = driver.statement.executeQuery(sql);
 
@@ -29,10 +30,14 @@ public class TeamRepository {
         while (results.next()) {
             int id = results.getInt("Id");
             String text = results.getString("TeamName");
+            int countryId = results.getInt("CountryId");
+            String countryName = results.getString("CountryName");
 
             Team team = new Team();
             team.setId(id);
             team.setTeamName(text);
+            team.setCountryName(countryName);
+            team.setCountryId(countryId);
 
             teamList.add(team);
         }

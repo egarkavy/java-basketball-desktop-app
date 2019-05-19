@@ -103,7 +103,7 @@ public class Games {
         String winnerId = winnerField.getText();
         String fScore = fScoreField.getText();
         String sScore = sScoreField.getText();
-        String date = firstIdField.getText();
+        String date = dateFIeld.getText();
 
         String error = ValidateGame(fId, sId, winnerId, fScore, sScore, date);
 
@@ -112,7 +112,7 @@ public class Games {
             return;
         }
 
-        Game game = new Game(Integer.parseInt(fId), Integer.parseInt(sId), Integer.parseInt(winnerId), new SimpleDateFormat("dd/MM/yyyy hh/mm").parse(date), Integer.parseInt(fScore), Integer.parseInt(sScore));
+        Game game = new Game(Integer.parseInt(fId), Integer.parseInt(sId), Integer.parseInt(winnerId), new SimpleDateFormat("dd/MM/yyyy").parse(date), Integer.parseInt(fScore), Integer.parseInt(sScore));
 
         gamesRepository.Save(game);
 
@@ -161,8 +161,6 @@ public class Games {
             if (winnerId != 1 && winnerId != 2) {
                 error = "winner must be in range of 1 or 2";
             }
-
-            return error;
         }
 
         if (!TryParseInt(fScore)) {
@@ -215,7 +213,7 @@ public class Games {
         game.setFirstTeamScore(Integer.parseInt(fScoreField.getText()));
         game.setSecondTeamScore(Integer.parseInt(sScoreField.getText()));
         try {
-            game.setDateOfGame(new SimpleDateFormat("dd/MM/yyyy hh/mm").parse(dateFIeld.getText()));
+            game.setDateOfGame(new SimpleDateFormat("dd/MM/yyyy").parse(dateFIeld.getText()));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -257,7 +255,7 @@ public class Games {
 
     private boolean TryParseDate(String val) {
         try {
-            new SimpleDateFormat("dd/MM/yyyy hh/mm").parse(val);
+            new SimpleDateFormat("dd/MM/yyyy").parse(val);
             return true;
         } catch (NumberFormatException e) {
             return false;
