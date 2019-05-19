@@ -66,6 +66,14 @@ public class MainUser {
                 e1.printStackTrace();
             }
         });
+
+        teamsBtn.addActionListener(e -> {
+            try {
+                WindowService.JustGoToVindow(new Teams().panel);
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+        });
     }
 
     private void FillNews() throws SQLException {

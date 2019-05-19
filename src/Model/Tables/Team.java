@@ -6,6 +6,17 @@ package Model.Tables;
 public class Team {
     private int Id;
     private String TeamName;
+    private String CountryName;
+    private int CountryId;
+
+    public Team() {
+
+    }
+
+    public Team(String teamName, int countryId) {
+        TeamName = teamName;
+        CountryId = countryId;
+    }
 
     public int getId() {
         return Id;
@@ -21,5 +32,21 @@ public class Team {
 
     public void setTeamName(String teamName) {
         TeamName = teamName;
+    }
+
+    public String getCountryName() {
+        return CountryName;
+    }
+
+    public void setCountryName(String countryName) {
+        CountryName = countryName;
+    }
+
+    public int getCountryId() {
+        return CountryId;
+    }
+
+    public void setCountryId(int countryId) {
+        CountryId = countryId;
     }
 }
