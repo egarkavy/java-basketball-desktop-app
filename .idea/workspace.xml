@@ -6,23 +6,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/basic/MainUser.java" line="87" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8674a071-4cdf-4340-a3e1-d9e1c979ddbd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Model/Repositories/ToDoRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Model/Tables/ToDo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java_desktop_app/Model/Repositories/TeamRepository.class" afterPath="$PROJECT_DIR$/out/production/java_desktop_app/Model/Repositories/TeamRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java_desktop_app/Model/Tables/Team.class" afterPath="$PROJECT_DIR$/out/production/java_desktop_app/Model/Tables/Team.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java_desktop_app/basic/Login.class" afterPath="$PROJECT_DIR$/out/production/java_desktop_app/basic/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java_desktop_app/basic/MainAdmin.class" afterPath="$PROJECT_DIR$/out/production/java_desktop_app/basic/MainAdmin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java_desktop_app/basic/MainUser.class" afterPath="$PROJECT_DIR$/out/production/java_desktop_app/basic/MainUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Repositories/GamesRepository.java" afterPath="$PROJECT_DIR$/src/Model/Repositories/GamesRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Repositories/TeamRepository.java" afterPath="$PROJECT_DIR$/src/Model/Repositories/TeamRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/basic/Games.java" afterPath="$PROJECT_DIR$/src/basic/Games.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/basic/Login.form" afterPath="$PROJECT_DIR$/src/basic/Login.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/basic/MainAdmin.form" afterPath="$PROJECT_DIR$/src/basic/MainAdmin.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/basic/MainAdmin.java" afterPath="$PROJECT_DIR$/src/basic/MainAdmin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/basic/MainUser.java" afterPath="$PROJECT_DIR$/src/basic/MainUser.java" />
-    </list>
+    <list default="true" id="8674a071-4cdf-4340-a3e1-d9e1c979ddbd" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,8 +65,8 @@
       <file leaf-file-name="GamesRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Model/Repositories/GamesRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="291">
+              <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
               <folding>
                 <element signature="e#969#975#0" expanded="true" />
               </folding>
@@ -849,16 +833,15 @@
       <workItem from="1557063709700" duration="21022000" />
       <workItem from="1557654498411" duration="17280000" />
       <workItem from="1558191327828" duration="18131000" />
-      <workItem from="1558291212997" duration="12220000" />
+      <workItem from="1558291212997" duration="12240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75357000" />
+    <option name="totallyTimeSpent" value="75377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -871,7 +854,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39957717" sideWeight="0.6822917" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.6822917" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1526,8 +1509,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Repositories/GamesRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="291">
+          <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
           <folding>
             <element signature="e#969#975#0" expanded="true" />
           </folding>
