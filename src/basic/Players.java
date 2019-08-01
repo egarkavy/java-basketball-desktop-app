@@ -96,9 +96,9 @@ public class Players {
         String num = numberField.getText();
 
         String error = ValidatePlayer(name, sur, country, team, num);
+        errorLabel.setText(error);
 
         if (error.length() > 0) {
-            errorLabel.setText(error);
             return;
         }
 
@@ -123,9 +123,21 @@ public class Players {
 
     private String ValidatePlayer(String name, String surname, String country, String team, String num) throws SQLException {
         String error = "";
-        if (name == null || surname == null || country == null || team == null || num == null) {
+        if (name.isEmpty() || surname.isEmpty() || country.isEmpty() || team.isEmpty() || num.isEmpty()) {
             error = "All fields are required";
 
+            return error;
+        }
+
+        String NSPattern = "[A-Z][A-z]+";
+
+        if (!name.matches(NSPattern)) {
+            error = "Use Latin letters for the name";
+            return error;
+        }
+
+        if (!surname.matches(NSPattern)) {
+            error = "Use Latin letters for the Surname";
             return error;
         }
 
@@ -167,6 +179,19 @@ public class Players {
         Player player = GetPlayerFromTable();
 
         FillPlayerFromEditFields(player);
+
+        String name = nameField.getText();
+        String sur = surnameField.getText();
+        String country = countryField.getText();
+        String team = teamField.getText();
+        String num = numberField.getText();
+
+        String error = ValidatePlayer(name, sur, country, team, num);
+        errorLabel.setText(error);
+
+        if (error.length() > 0) {
+            return;
+        }
 
         playersRepository.Update(player);
 
